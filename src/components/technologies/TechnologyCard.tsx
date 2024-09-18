@@ -4,9 +4,7 @@ import { FastAverageColor } from 'fast-average-color';
 import { skill } from "@/types/main";
 import { useTheme } from "next-themes";
 
-const Skill = ({ name, image }: skill) => {
-
-    const { theme } = useTheme();
+const TechnologyCard = ({ name, image }: skill) => {
     const [bgColor, setBgColor] = useState("")
     useEffect(() => {
         new FastAverageColor().getColorAsync(image)
@@ -22,12 +20,12 @@ const Skill = ({ name, image }: skill) => {
     return (
         <div className="flex flex-col justify-center items-center gap-2">
             <div title={name} style={{ backgroundColor: bgColor }}
-                className={"h-20 w-20 md:h-24 md:w-24 rounded-full bg-gray-100 dark:bg-grey-800 flex items-center justify-center"}>
-                <Image alt="skill" width={100} height={100} className={`h-12 w-12 md:h-14 md:w-14 object-contain ${theme === 'dark' && (name === "GitHub" || name === "Vercel" || name === "NextJS" || name === "ExpressJS" ? 'invert' : 'invert-0')}`} src={image} />
+                className={"h-20 w-20 md:h-24 md:w-24 rounded-full bg-gray-100 flex items-center justify-center"}>
+                <Image alt="skill" width={100} height={100} className={`h-12 w-12 md:h-14 md:w-14 object-contain`} src={image} />
             </div>
-            <p className="text-sm md:text-base">{name}</p>
+            <p className="text-sm md:text-base text-black">{name}</p>
         </div>
     )
 }
 
-export default Skill
+export default TechnologyCard
