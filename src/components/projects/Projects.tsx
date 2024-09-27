@@ -1,4 +1,4 @@
-import { project } from "@/types/main";
+import { project } from "@/interfaces/main";
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import SectionWrapper from "../SectionWrapper";

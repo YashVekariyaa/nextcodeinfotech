@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { useEffect, useState } from 'react'
 import { FastAverageColor } from 'fast-average-color';
-import { skill } from "@/types/main";
+import { skill } from "@/interfaces/main";
 import { useTheme } from "next-themes";
 
 const TechnologyCard = ({ name, image }: skill) => {

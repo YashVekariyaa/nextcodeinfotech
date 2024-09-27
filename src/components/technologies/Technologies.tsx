@@ -1,6 +1,6 @@
 "use client"
 import { useState } from 'react';
-import { skill } from '@/types/main';
+import { skill } from '@/interfaces/main';
 import SkillCard from "./TechnologyCard"
 import SectionWrapper from '../SectionWrapper';
 import technology from "../../../data.json"

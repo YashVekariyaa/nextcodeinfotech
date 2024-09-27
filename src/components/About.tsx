@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { about } from "@/types/main";
+import { about } from "@/interfaces/main";
 import Link from "next/link";
 import SectionWrapper from "./SectionWrapper";
 import { BiLinkExternal } from "react-icons/bi";

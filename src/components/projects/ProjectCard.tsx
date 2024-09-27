@@ -1,4 +1,4 @@
-import { project } from "@/types/main"
+import { project } from "@/interfaces/main"
 import Image from "next/image"
 import Link from "next/link"
 import { FaGithub, FaVideo } from "react-icons/fa"

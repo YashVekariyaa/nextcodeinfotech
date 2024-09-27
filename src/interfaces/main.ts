@@ -1,10 +1,10 @@
-type skill = {
+export interface skill {
     name: string,
     image: string,
     category: string
 }
 
-type project = {
+export interface project {
     name: string,
     image: string,
     techstack: string,
@@ -16,7 +16,7 @@ type project = {
     }
 }
 
-type experience = {
+export interface experience {
     company: string,
     position: string,
     startDate: string,
@@ -24,14 +24,14 @@ type experience = {
     desc: string[]
 }
 
-type education = {
+export interface education {
     institute: string,
     degree: string,
     startDate: string,
     endDate: string,
 }
 
-type main = {
+export interface main {
     name: string,
     titles: string[],
     heroImage: string,
@@ -39,7 +39,7 @@ type main = {
     techStackImages: string[],
 }
 
-type about = {
+export interface about {
     aboutImage: string,
     aboutImageCaption: string,
     title: string,
@@ -48,13 +48,13 @@ type about = {
     callUrl: string
 }
 
-type social = {
+export interface social {
     name: string,
     icon: string,
     link: string
 }
 
-type data = {
+export interface data {
     main: main,
     about: about,
     skills: skill[],
@@ -64,4 +64,19 @@ type data = {
     socials: social[]
 }
 
-export type { data, main, about, skill, project, experience, education, social };
+export interface InputProps {
+    label: string
+}
+
+export interface NumberInputProps {
+    value?: string;
+    onChange: (value: string) => void
+}
+
+
+// buttons 
+export interface ButtonProps {
+    className?: string,
+    text?: string,
+    onClick?: () => void
+}

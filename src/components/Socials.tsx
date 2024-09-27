@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import * as Fa from 'react-icons/fa';
-import { social } from '@/types/main';
+import { social } from '@/interfaces/main';
 // import { IconType } from '../node_modules/react-icons/lib'
 
 const Socials = ({ socials }: { socials: social[] }) => {
