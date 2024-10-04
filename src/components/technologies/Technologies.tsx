@@ -3,10 +3,10 @@ import { useState } from 'react';
 import { skill } from '@/interfaces/main';
 import SkillCard from "./TechnologyCard"
 import SectionWrapper from '../SectionWrapper';
-import technology from "../../../data.json"
+import { technologies } from '@/utils/utils';
 
 const Technologies = () => {
-    const categories = Array.from(new Set(technology.skills.map((s: { category: any; }) => s.category)))
+    const categories = Array.from(new Set(technologies.map((s: { category: any; }) => s.category)))
     const [category, setCategory] = useState(categories[0])
 
     return (
@@ -23,7 +23,7 @@ const Technologies = () => {
             </div>
 
             <div className="lg:w-3/4 2xl:w-3/5 my-8 mx-auto md:px-12 grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 place-items-center gap-8">
-                {technology.skills.filter((s: skill) => s.category.toLowerCase() === category.toLowerCase()).map((s: any, i: number) => (
+                {technologies.filter((s: skill) => s.category.toLowerCase() === category.toLowerCase()).map((s: any, i: number) => (
                     <SkillCard key={i} {...s} />
                 ))}
             </div>

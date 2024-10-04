@@ -80,3 +80,10 @@ export interface ButtonProps {
     text?: string,
     onClick?: () => void
 }
+
+// services 
+export interface ServiceCardProps {
+    image: string,
+    title: string,
+    text: string
+}

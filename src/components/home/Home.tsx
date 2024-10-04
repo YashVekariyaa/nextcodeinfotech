@@ -6,16 +6,14 @@ import Projects from "@/components/projects/Projects";
 import Socials from "@/components/Socials";
 import Contact from "@/components/Contact";
 import CallToAction from "@/components/CallToAction";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../header/Header";
 import Technologies from "@/components/technologies/Technologies";
 import Services from "@/components/services/Services";
 
-const HomePage = ({ data }: any) => {
+const Home = ({ data }: any) => {
     return (
         <>
-            <Header logo={data.main.name} />
-            <Hero mainData={data.main} />
+            <Hero />
             <Services />
             <Technologies />
             {/* <Socials socials={data.socials} /> */}
@@ -29,4 +27,4 @@ const HomePage = ({ data }: any) => {
     )
 }
 
-export default HomePage
+export default Home

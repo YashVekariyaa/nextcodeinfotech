@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { CgClose, CgMenuRight } from 'react-icons/cg'
 import { navItems } from '@/utils/utils';
 
-export default function Header({ logo }: { logo: string }) {
+export default function Header() {
 
     const [navCollapse, setNavCollapse] = useState(true)
     const [scroll, setScroll] = useState(false)
