@@ -4,7 +4,7 @@ import React from 'react'
 const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, text }) => {
     return (
         <div
-            className="w-full text-start bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)] p-9 overflow-hidden rounded"
+            className="w-full text-start bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)] p-9 overflow-hidden rounded-md"
         >
             <div className="bg-[#f9fafb] rounded-full h-20 w-20 flex justify-center items-center">
                 <img src={image} className='h-11 w-11' />

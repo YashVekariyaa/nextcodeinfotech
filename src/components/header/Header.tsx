@@ -10,9 +10,9 @@ export default function Header() {
     const [scroll, setScroll] = useState(false)
 
     return (
-        <header className={` ${scroll ? 'border-b bg-white' : 'border-b-0'} shadow-sm bg-white border-gray-200 dark:border-b-0 z-30 min-w-full flex flex-col fixed`}>
-            <nav className='lg:w-11/12 2xl:w-4/5 w-full md:px-6 2xl:px-0 mx-auto py-4 hidden sm:flex items-center justify-between'>
-                <Link href={'/'} className='2xl:ml-6 hover:text-violet-700 text-violet-500 transition-colors duration-300'>
+        <header className={` ${scroll ? 'border-b bg-white' : 'border-b-0'} shadow-sm bg-white border-gray-200 dark:border-b-0 z-30 flex flex-col fixed w-full`}>
+            <nav className='py-4 hidden sm:flex items-center justify-between max-w-screen-xl container mx-auto px-4'>
+                <Link href={'/'} className='hover:text-violet-700 text-violet-500 transition-colors duration-300'>
                     <img src='./logo.png' className='h-14 object-fill' />
                 </Link>
                 <ul className='flex items-center gap-8'>

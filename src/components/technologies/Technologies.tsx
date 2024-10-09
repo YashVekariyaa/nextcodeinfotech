@@ -10,11 +10,11 @@ const Technologies = () => {
     const [category, setCategory] = useState(categories[0])
 
     return (
-        <SectionWrapper id='skills' className="min-h-screen mt-12 md:mt-0 mx-4 md:mx-0 xl:my-20 2xl:my-0">
-            <div>
-                <p className='pt-20 mb-10 text-center text-xl md:text-8xl xl:text-5xl font-bold font-heading tracking-px-n leading-none text-black'>
-                    <span className='bg-blue-100 px-2'>Technologies</span>{" "}We Are Working With
-                </p>
+        <SectionWrapper id='skills' className="min-h-screen md:mt-0 mx-4 md:mx-0">
+            <div className='mt-20 pb-8'>
+                <div className='text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight text-heading text-center'>
+                    <span className='bg-blue-100 px-2'>Technologies</span>{" "}We Are Work With
+                </div>
             </div>
             <div className="md:w-1/2 overflow-x-auto scroll-hide lg:w-1/3 mx-auto mt-6 bg-white text-black p-2 flex justify-between items-center gap-3">
                 {categories.map((c: string, i: number) => (

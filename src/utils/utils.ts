@@ -102,7 +102,7 @@ export const technologies = [
 export const services = [
     {
         image: "/icons/brush.svg",
-        title: "UI / UX Creative Desing" ,
+        title: "UI / UX Creative Design" ,
         text: "Enhance your online experience with professional UI/UX design expertise."
     },
     {
