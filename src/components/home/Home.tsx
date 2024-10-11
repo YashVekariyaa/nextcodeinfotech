@@ -2,13 +2,14 @@
 import Hero from "@/components/hero/Hero";
 import About from "@/components/About";
 import Skills from "@/components/technologies/Technologies";
-import Projects from "@/components/projects/Projects";
+import Projects from "@/components/portfolio/Portfolio";
 import Socials from "@/components/Socials";
 import Contact from "@/components/Contact";
 import CallToAction from "@/components/CallToAction";
 import Header from "../header/Header";
 import Technologies from "@/components/technologies/Technologies";
 import Services from "@/components/services/Services";
+import Portfolio from "@/components/portfolio/Portfolio";
 
 const Home = ({ data }: any) => {
     return (
@@ -16,6 +17,7 @@ const Home = ({ data }: any) => {
             <Hero />
             <Services />
             <Technologies />
+            <Portfolio />
             {/* <Socials socials={data.socials} /> */}
             {/* <About aboutData={data.about} name={data.main.name} />
             <Projects projectsData={data.projects} />

@@ -1,10 +1,11 @@
 import React from 'react'
 import ServiceCard from '../cards/ServiceCard'
 import { services } from '@/utils/utils'
+import SectionWrapper from '../SectionWrapper'
 
 const Services = () => {
     return (
-        <div className=''>
+        <SectionWrapper id='skills' className="md:mt-0 mx-4 md:mx-0">
             <div className='mt-20 pb-8'>
                 <div className='py-16 bg-[#fcfaff] text-center text-heading'>
                     <div className='text-center'>
@@ -24,7 +25,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </SectionWrapper>
     )
 }
 
