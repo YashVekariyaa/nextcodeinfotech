@@ -87,3 +87,11 @@ export interface ServiceCardProps {
     title: string,
     text: string
 }
+
+// portfolio 
+export interface PortfolioProps {
+    title: string,
+    image: string,
+    url: string,
+    category: string,
+}

@@ -116,3 +116,42 @@ export const services = [
         text: "Boost your brand with our specialized mobile app development solutions."
     },
 ]
+
+export const portfolio = [
+  {
+    title: "Traveldate",
+    image: "/portfolio/tt.png",
+    url: "https://www.traveldate.org/",
+    category: "Web Development"
+  },
+  {
+    title: "Vianne",
+    image: "/portfolio/vianne.png",
+    url: "https://www.traveldate.org/",
+    category: "Web Development"
+  },
+  {
+    title: "CanConnect",
+    image: "/portfolio/canconnect.png",
+    url: "https://www.traveldate.org/",
+    category: "Web Development"
+  },
+  {
+    title: "Lakedesk",
+    image: "/portfolio/lakedesk.png",
+    url: "https://www.traveldate.org/",
+    category: "Web Development"
+  },
+  {
+    title: "Health Monitor",
+    image: "/portfolio/health-monitor.jpg",
+    url: "",
+    category: "App Development"
+  },
+  {
+    title: "Step Counter",
+    image: "/portfolio/step-counter.jpg",
+    url: "",
+    category: "App Development"
+  },
+]
