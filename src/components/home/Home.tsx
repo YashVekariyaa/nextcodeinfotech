@@ -10,6 +10,7 @@ import Header from "../header/Header";
 import Technologies from "@/components/technologies/Technologies";
 import Services from "@/components/services/Services";
 import Portfolio from "@/components/portfolio/Portfolio";
+import Footer from "../footer/Footer";
 
 const Home = ({ data }: any) => {
     return (

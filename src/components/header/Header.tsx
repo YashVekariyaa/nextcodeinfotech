@@ -13,7 +13,7 @@ export default function Header() {
         <header className={` ${scroll ? 'border-b bg-white' : 'border-b-0'} shadow-sm bg-white border-gray-200 dark:border-b-0 z-30 flex flex-col fixed w-full`}>
             <nav className='py-4 hidden sm:flex items-center justify-between max-w-screen-xl container mx-auto px-4'>
                 <Link href={'/'} className='hover:text-violet-700 text-violet-500 transition-colors duration-300'>
-                    <img src='./logo.png' className='h-14 object-fill' />
+                    <img src='./logo.png' className='h-16 object-fill' />
                 </Link>
                 <ul className='flex items-center gap-8'>
                     {navItems.map((item, index) => (

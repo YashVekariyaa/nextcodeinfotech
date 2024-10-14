@@ -3,6 +3,7 @@ import "../app/globals.css";
 import Header from '@/components/header/Header'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
+import Footer from '@/components/footer/Footer';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
     return (
@@ -15,6 +16,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             </Head>
             <Header />
             <Component {...pageProps} />
+            <Footer />
         </div>
     )
 }
