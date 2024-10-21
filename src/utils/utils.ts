@@ -1,3 +1,5 @@
+import { HiOutlinePaintBrush } from "react-icons/hi2";
+
 export const navItems = [
     {
         label: 'Home',
@@ -97,13 +99,13 @@ export const technologies = [
       "image": "/technologies/postgresql.png",
       "category": "Database"
     }
-  ]
+]
 
 export const services = [
     {
         image: "/icons/brush.svg",
-        title: "UI / UX Creative Design" ,
-        text: "Enhance your online experience with professional UI/UX design expertise."
+        title: "UI / UX Design" ,
+        text: "Enhance your online experience with professional UI/UX design expertise.",
     },
     {
         image: "/icons/pcweb.png",
@@ -116,6 +118,8 @@ export const services = [
         text: "Boost your brand with our specialized mobile app development solutions."
     },
 ]
+
+// ... the rest of the component
 
 export const portfolio = [
   {
@@ -153,5 +157,46 @@ export const portfolio = [
     image: "/portfolio/step-counter.jpg",
     url: "",
     category: "App Development"
+  },
+]
+
+export const links = {
+  instagram: "https://www.instagram.com/nextcode_infotech/"
+}
+
+export const contact = {
+  address: "https://maps.app.goo.gl/EASuMqkbhPJStd8r7"
+}
+
+export const pages = [
+  {
+    title: "Pages",
+    children: [
+      {
+        title: "Portfolio",
+        url: '/'
+      },
+      {
+        title: "Technologies",
+        url: '/about-us'
+      },
+      {
+        title: "Services",
+        url: ''
+      }
+    ] 
+  },
+  {
+    title: "Support",
+    children: [
+      {
+        title: "About Us",
+        url: '/'
+      },
+      {
+        title: "Contact Us",
+        url: '/'
+      } 
+    ]
   },
 ]

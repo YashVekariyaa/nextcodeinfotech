@@ -95,3 +95,10 @@ export interface PortfolioProps {
     url: string,
     category: string,
 }
+
+
+// icons 
+export interface IconProps{
+    src: string,
+    className: string
+}
