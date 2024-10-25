@@ -26,10 +26,10 @@ const PortfolioCard: React.FC<PortfolioProps> = ({ title, image, url, category }
             className="rounded-md"
         >
             <Link href={url} target="_blank">
-            <div className="w-full bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)] rounded-md p-3 cursor-pointer transform transition-transform duration-300 hover:-translate-y-1">
-                <img className="h-full w-full rounded-md" src={image} />
-                {/* <div className="font-semibold pt-3">{title}</div> */}
-            </div>
+                <div className="w-full bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)] rounded-md p-3 cursor-pointer transform transition-transform duration-300 hover:-translate-y-1">
+                    <img className="h-full w-full rounded-md" src={image} />
+                    {/* <div className="font-semibold pt-3">{title}</div> */}
+                </div>
             </Link>
         </motion.div>
     )

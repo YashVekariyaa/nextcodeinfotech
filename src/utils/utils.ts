@@ -10,7 +10,7 @@ export const navItems = [
         href: '/',
     },
     {
-        label: 'Work',
+        label: 'Portfolio',
         href: '/',
     },
     {
@@ -130,7 +130,7 @@ export const portfolio = [
   },
   {
     title: "Vianne",
-    image: "/portfolio/vianne.png",
+    image: "/portfolio/jewels.png",
     url: "https://www.traveldate.org/",
     category: "Web Development"
   },
