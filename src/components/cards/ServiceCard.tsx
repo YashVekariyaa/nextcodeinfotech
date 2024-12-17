@@ -1,4 +1,5 @@
 import { ServiceCardProps } from '@/interfaces/main'
+import Image from 'next/image'
 import React from 'react'
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, text }) => {

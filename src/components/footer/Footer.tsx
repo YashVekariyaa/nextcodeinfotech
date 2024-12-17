@@ -25,9 +25,9 @@ const Footer = () => {
                                 </p>
                             </Link>
                             <Link href={links.instagram} target='_blank' className='pt-3 flex items-center gap-2 group'>
-                                <Link href={links.instagram} target='_blank' className='bg-gray-200  hover:bg-gray-300 cursor-pointer transition-all duration-200 rounded-full w-10 h-10 p-3 flex justify-center items-center'>
+                                <div className='bg-gray-200  hover:bg-gray-300 cursor-pointer transition-all duration-200 rounded-full w-10 h-10 p-3 flex justify-center items-center'>
                                     <Icon src="/icons/instagram.png" className='h-4 w-4 object-cover' />
-                                </Link>
+                                </div>
                                 <span className='group-hover:text-primary transition-all duration-200'>{COMPANY_NAME}</span>
                             </Link>
                         </div>
