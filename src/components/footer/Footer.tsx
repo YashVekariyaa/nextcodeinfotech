@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import Icon from '../icon/Icon'
-import { contact, links, pages } from '@/utils/utils'
+import { COMPANY_NAME, contact, links, pages } from '@/utils/utils'
 import { SlLocationPin } from 'react-icons/sl'
 import { LuPhoneCall } from 'react-icons/lu'
 import { MdOutlineMailOutline } from 'react-icons/md'
@@ -24,11 +24,12 @@ const Footer = () => {
                                     C-45, Sumeru City Mall, near Sudama Chowk, Mota Varachha, Surat - 394101
                                 </p>
                             </Link>
-                            <div className='pt-3'>
-                                <Link href={links.instagram} target='_blank' className='bg-gray-200 hover:bg-gray-300 cursor-pointer transition-all duration-200 rounded-full w-10 h-10 p-3 flex justify-center items-center'>
+                            <Link href={links.instagram} target='_blank' className='pt-3 flex items-center gap-2 group'>
+                                <Link href={links.instagram} target='_blank' className='bg-gray-200  hover:bg-gray-300 cursor-pointer transition-all duration-200 rounded-full w-10 h-10 p-3 flex justify-center items-center'>
                                     <Icon src="/icons/instagram.png" className='h-4 w-4 object-cover' />
                                 </Link>
-                            </div>
+                                <span className='group-hover:text-primary transition-all duration-200'>{COMPANY_NAME}</span>
+                            </Link>
                         </div>
                         {
                             pages?.map((page) => {
@@ -50,18 +51,18 @@ const Footer = () => {
                         }
                         <div className="w-full p-8">
                             <h3 className="mb-6 font-semibold leading-normal text-heading">Contact</h3>
-                            <Link href="" className='flex items-center gap-3 pb-2'>
+                            <Link href={`tel:${contact.phoneNumber}`} className='flex items-center gap-3 pb-2 group'>
                                 <div className='flex gap-3 items-center'>
                                     <LuPhoneCall className='hover:!text-primary transition-all duration-200' />
-                                    <p className='text-sm text-heading font-medium leading-relaxed'>+91 97379 39226</p>
+                                    <p className='text-sm text-heading font-medium leading-relaxed group-hover:text-primary transition-all duration-200'>{contact.phoneNumber}</p>
                                 </div>
                             </Link>
-                            <div className='flex items-center gap-3'>
+                            <Link href={`mailto:${contact.email}`} className='flex items-center gap-3 group'>
                                 <div className='flex gap-3 items-center'>
                                     <MdOutlineMailOutline className='hover:!text-primary transition-all duration-200' />
-                                    <p className=' text-sm text-heading font-medium leading-relaxed'>info.nextcodeinfotech@gmail.com</p>
+                                    <p className=' text-sm text-heading font-medium leading-relaxed group-hover:text-primary transition-all duration-200'>{contact.email}</p>
                                 </div>
-                            </div>
+                            </Link>
                             {/* <ul>
                                 <li className="mb-3.5 text-sm"><a className="text-gray-600 hover:text-gray-700 font-medium leading-relaxed" href="#">About</a></li>
                                 <li className="mb-3.5 text-sm"><a className="text-gray-600 hover:text-gray-700 font-medium leading-relaxed" href="#">Leadership</a></li>

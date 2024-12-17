@@ -1,4 +1,5 @@
-import { HiOutlinePaintBrush } from "react-icons/hi2";
+
+export const COMPANY_NAME = "NextCode Infotech"
 
 export const navItems = [
     {
@@ -119,18 +120,16 @@ export const services = [
     },
 ]
 
-// ... the rest of the component
-
 export const portfolio = [
   {
     title: "Traveldate",
-    image: "/portfolio/tt.png",
+    image: "/portfolio/traveldate.png",
     url: "https://www.traveldate.org/",
     category: "Web Development"
   },
   {
     title: "Vianne",
-    image: "/portfolio/jewels.png",
+    image: "/portfolio/vianne.png",
     url: "https://www.traveldate.org/",
     category: "Web Development"
   },
@@ -141,20 +140,26 @@ export const portfolio = [
     category: "Web Development"
   },
   {
-    title: "Lakedesk",
-    image: "/portfolio/lakedesk.png",
+    title: "Ad Opus",
+    image: "/portfolio/adopus.png",
+    url: "https://www.traveldate.org/",
+    category: "Web Development"
+  },
+  {
+    title: "Ad Opus",
+    image: "/portfolio/stepmed.png",
     url: "https://www.traveldate.org/",
     category: "Web Development"
   },
   {
     title: "Health Monitor",
-    image: "/portfolio/health-monitor.jpg",
+    image: "/portfolio/health-monitor.png",
     url: "",
     category: "App Development"
   },
   {
     title: "Step Counter",
-    image: "/portfolio/step-counter.jpg",
+    image: "/portfolio/step-counter.png",
     url: "",
     category: "App Development"
   },
@@ -165,6 +170,8 @@ export const links = {
 }
 
 export const contact = {
+  email: "info.nextcodeinfotech@gmail.com",
+  phoneNumber: "+91 97379 39226",
   address: "https://maps.app.goo.gl/EASuMqkbhPJStd8r7"
 }
 
