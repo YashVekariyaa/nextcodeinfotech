@@ -18,6 +18,16 @@ module.exports = {
         "deepDark": "#000000",
         "nav": "#727272"
       },
+      animation: {
+        'float': 'floatAnimation 3s ease-in-out infinite',
+      },
+      keyframes: {
+        floatAnimation: {
+          '0%': { transform: 'translateY(0%)' },
+          '50%': { transform: 'translateY(-20%)' },
+          '100%': { transform: 'translateY(0)' },
+        },
+      },
     },
   },
   plugins: [],

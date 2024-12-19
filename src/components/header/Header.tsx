@@ -63,9 +63,9 @@ export default function Header() {
                                             </div>
                                         </div>
                                         :
-                                        <p className='text-sm'>
+                                        <Link href={item?.href} className='text-sm'>
                                             {item?.label}
-                                        </p>
+                                        </Link>
                                 }
                             </li>
                         ))}

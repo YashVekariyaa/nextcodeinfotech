@@ -1,38 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-  box-sizing: border-box;
-  padding: 0;
+  scroll-behavior: smooth;
   margin: 0;
-  font-family: "Poppins", sans-serif !important;
-}
-
-html {
-  scroll-behavior: smooth !important;
-}
-
-::-webkit-scrollbar {
-  width: 0.5rem;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #6565656a;
-}
-
-.scroll-hide::-webkit-scrollbar {
-  display: none;
-}
-
-.react-tel-input .form-control {
-  border: 1px solid #dadbe2 !important;
-}
-
-.react-tel-input .form-control:focus {
-  background-color: #eff6ff !important;
-  transition: all !important;
-  transition-duration: 200ms !important;
+  padding: 0;
 }
