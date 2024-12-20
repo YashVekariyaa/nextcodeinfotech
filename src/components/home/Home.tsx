@@ -10,7 +10,6 @@ import Header from "../header/Header";
 import Technologies from "@/components/technologies/Technologies";
 import Services from "@/components/services/Services";
 import Portfolio from "@/components/portfolio/Portfolio";
-import Footer from "../footer/Footer";
 
 const Home = ({ data }: any) => {
     return (
@@ -18,7 +17,9 @@ const Home = ({ data }: any) => {
             <Hero />
             <Services />
             <Technologies />
-            <Portfolio />
+            <div className="mt-2">
+                <Portfolio />
+            </div>
             {/* <Socials socials={data.socials} /> */}
             {/* <About aboutData={data.about} name={data.main.name} />
             <Projects projectsData={data.projects} />

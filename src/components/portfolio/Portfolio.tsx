@@ -1,6 +1,5 @@
-import { PortfolioProps, project } from "@/interfaces/main";
-import { useEffect, useState } from "react";
-import { Link } from "react-scroll";
+import { PortfolioProps } from "@/interfaces/main";
+import { useState } from "react";
 import SectionWrapper from "../SectionWrapper";
 import PortfolioCard from "./PortfolioCard";
 import { portfolio } from "@/utils/utils";
@@ -11,7 +10,7 @@ const Portfolio = () => {
 
     return (
         <SectionWrapper id="projects" className="md:mt-0 mx-4 md:mx-0">
-            <div className='mt-20 pb-8'>
+            <div className='mt-20'>
                 <div className='text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight text-heading text-center'>
                     Explore Our <span className='bg-blue-100 px-2'>Portfolio</span>{" "}
                 </div>

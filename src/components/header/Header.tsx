@@ -10,6 +10,7 @@ import { HiOutlineChevronRight, HiOutlinePaintBrush } from 'react-icons/hi2';
 import { IoIosMenu } from 'react-icons/io';
 import { FaLaptopCode } from 'react-icons/fa';
 import { AiOutlineAndroid } from 'react-icons/ai';
+import { useRouter } from 'next/router';
 
 export default function Header() {
 
@@ -18,6 +19,7 @@ export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef<HTMLDivElement | null>(null);
+    const router = useRouter()
 
     const toggleDropdown = () => {
         setIsOpen(true);
@@ -39,7 +41,7 @@ export default function Header() {
     }, []);
 
     return (
-        <header className={` ${scroll ? 'border-b bg-white' : 'border-b-0'} shadow-sm bg-white border-gray-200 dark:border-b-0 z-30 flex flex-col fixed w-full`}>
+        <header className={` ${scroll ? 'border-b bg-white' : 'border-b-0'} shadow-sm bg-white border-gray-200 dark:border-b-0 z-30 flex flex-col top-0 fixed w-full`}>
             <nav className='py-4 hidden xl:flex items-center justify-between max-w-screen-xl container mx-auto px-4'>
                 <Link href={'/'} className='hover:text-violet-700 text-violet-500 transition-colors duration-300'>
                     <img src='./logo.png' className='h-16 object-fill' />
@@ -63,7 +65,7 @@ export default function Header() {
                                             </div>
                                         </div>
                                         :
-                                        <Link href={item?.href} className='text-sm'>
+                                        <Link href={item?.href} className={`text-sm ${item?.href === router?.pathname ? "text-primary": ""}`}>
                                             {item?.label}
                                         </Link>
                                 }
@@ -104,9 +106,9 @@ export default function Header() {
                                 </div>
                             </>
                             :
-                            <li key={index} className='flex px-5 flex-col gap-10 cursor-pointer line-clamp-none leading-10 tracking-wide text-sm text-nav font-bold hover:text-primary transition-all duration-300'>
+                            <Link href={item?.href} key={index} className='flex px-5 flex-col gap-10 cursor-pointer line-clamp-none leading-10 tracking-wide text-sm text-nav font-bold hover:text-primary transition-all duration-300'>
                                 {item?.label}
-                            </li>
+                            </Link>
                     ))}
                 </div>
             </div>

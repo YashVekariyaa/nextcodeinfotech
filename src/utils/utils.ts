@@ -11,15 +11,15 @@ export const navItems = [
   },
   {
     label: "Portfolio",
-    href: "/",
+    href: "/portfolio",
   },
   {
     label: "About Us",
-    href: "/",
+    href: "/about",
   },
   {
     label: "Contact Us",
-    href: "/",
+    href: "/contact",
   },
 ];
 
@@ -284,7 +284,9 @@ export const links = {
 export const contact = {
   email: "info.nextcodeinfotech@gmail.com",
   phoneNumber: "+91 97379 39226",
-  address: "https://maps.app.goo.gl/EASuMqkbhPJStd8r7",
+  address:
+    "C-45, Sumeru City Mall, near Sudama Chowk, Mota Varachha, Surat - 394101",
+  location: "https://maps.app.goo.gl/EASuMqkbhPJStd8r7",
 };
 
 export const pages = [

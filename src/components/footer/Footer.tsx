@@ -16,12 +16,12 @@ const Footer = () => {
                             <a className="inline-block" href="#">
                                 <img src="/logo.png" className='h-16 object-fill' alt="" />
                             </a>
-                            <Link href={contact.address} target='_blank' className="flex lg:py-3 items-start gap-1 font-medium leading-relaxed md:max-w-xs">
+                            <Link href={contact.location} target='_blank' className="flex lg:py-3 items-start gap-1 font-medium leading-relaxed md:max-w-xs">
                                 <div className='w-20 '>
                                     <SlLocationPin className='text-heading text-lg hover:!text-primary transition-all duration-200' />
                                 </div>
                                 <p className='text-sm text-gray-600'>
-                                    C-45, Sumeru City Mall, near Sudama Chowk, Mota Varachha, Surat - 394101
+                                    {contact.address}
                                 </p>
                             </Link>
                             <Link href={links.instagram} target='_blank' className='pt-3 flex items-center gap-2 group'>
