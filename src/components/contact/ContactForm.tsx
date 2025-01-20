@@ -16,6 +16,7 @@ const ContactForm = () => {
     })
     const [errors, setErrors] = useState<Errors>({});
 
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setState({ ...state, [name]: value });
@@ -101,6 +102,7 @@ const ContactForm = () => {
                     <Button
                         className='bg-primary uppercase text-sm tracking-normal px-10 py-4 rounded font-bold text-white hover:bg-primary-hover transition-all duration-300'
                         text="Submit"
+                        type="submit"
                     />
                 </div>
             </form>

@@ -1,6 +1,11 @@
+import { NavItem } from "@/interfaces/main";
+import { AiOutlineAndroid } from "react-icons/ai";
+import { FaLaptopCode } from "react-icons/fa";
+import { HiOutlinePaintBrush } from "react-icons/hi2";
+
 export const COMPANY_NAME = "NextCode Infotech";
 
-export const navItems = [
+export const navItems: NavItem[] = [
   {
     label: "Home",
     href: "/",
@@ -8,6 +13,23 @@ export const navItems = [
   {
     label: "Services",
     href: "/",
+    subItems: [
+      {
+        icon: HiOutlinePaintBrush,
+        label: "UI/UX Design",
+        href: "/ui-ux",
+      },
+      {
+        icon: FaLaptopCode,
+        label: "Web Development",
+        href: "/web",
+      },
+      {
+        icon: AiOutlineAndroid,
+        label: "App Development",
+        href: "/app",
+      },
+    ],
   },
   {
     label: "Portfolio",

@@ -1,9 +1,9 @@
 import { ButtonProps } from '@/interfaces/main'
 import React from 'react'
 
-const Button: React.FC<ButtonProps> = ({ className, text }) => {
+const Button: React.FC<ButtonProps> = ({ className, text, type }) => {
     return (
-        <button className={className}>{text}</button>
+        <button className={className} type={type}>{text}</button>
     )
 }
 

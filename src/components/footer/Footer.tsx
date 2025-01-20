@@ -5,6 +5,7 @@ import { COMPANY_NAME, contact, links, pages } from '@/utils/utils'
 import { SlLocationPin } from 'react-icons/sl'
 import { LuPhoneCall } from 'react-icons/lu'
 import { MdOutlineMailOutline } from 'react-icons/md'
+import Logo from '../logo/Logo'
 
 const Footer = () => {
     return (
@@ -14,7 +15,7 @@ const Footer = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 -m-8">
                         <div className="w-full p-8">
                             <a className="inline-block" href="#">
-                                <img src="/logo.png" className='h-16 object-fill' alt="" />
+                                <Logo />
                             </a>
                             <Link href={contact.location} target='_blank' className="flex lg:py-3 items-start gap-1 font-medium leading-relaxed md:max-w-xs">
                                 <div className='w-20 '>
@@ -28,7 +29,6 @@ const Footer = () => {
                                 <div className='bg-gray-200  hover:bg-gray-300 cursor-pointer transition-all duration-200 rounded-full w-10 h-10 p-3 flex justify-center items-center'>
                                     <Icon src="/icons/instagram.png" className='h-4 w-4 object-cover' />
                                 </div>
-                                <span className='group-hover:text-primary transition-all duration-200'>{COMPANY_NAME}</span>
                             </Link>
                         </div>
                         {
@@ -63,13 +63,6 @@ const Footer = () => {
                                     <p className=' text-sm text-heading font-medium leading-relaxed group-hover:text-primary transition-all duration-200'>{contact.email}</p>
                                 </div>
                             </Link>
-                            {/* <ul>
-                                <li className="mb-3.5 text-sm"><a className="text-gray-600 hover:text-gray-700 font-medium leading-relaxed" href="#">About</a></li>
-                                <li className="mb-3.5 text-sm"><a className="text-gray-600 hover:text-gray-700 font-medium leading-relaxed" href="#">Leadership</a></li>
-                                <li className="mb-3.5 text-sm"><a className="text-gray-600 hover:text-gray-700 font-medium leading-relaxed" href="#">Press/News</a></li>
-                                <li className="mb-3.5 text-sm"><a className="text-gray-600 hover:text-gray-700 font-medium leading-relaxed" href="#">Careers/Team</a></li>
-                                <li><a className="text-gray-600 hover:text-gray-700 font-medium leading-relaxed" href="#">Contact Us</a></li>
-                            </ul> */}
                         </div>
                     </div>
                 </div>

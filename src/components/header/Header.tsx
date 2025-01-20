@@ -11,6 +11,10 @@ import { IoIosMenu } from 'react-icons/io';
 import { FaLaptopCode } from 'react-icons/fa';
 import { AiOutlineAndroid } from 'react-icons/ai';
 import { useRouter } from 'next/router';
+import Logo from '../logo/Logo';
+import Icon from '../icon/Icon';
+import { IconBase } from 'react-icons/lib';
+import { NavItem, ServiceItems } from '@/interfaces/main';
 
 export default function Header() {
 
@@ -44,11 +48,11 @@ export default function Header() {
         <header className={` ${scroll ? 'border-b bg-white' : 'border-b-0'} shadow-sm bg-white border-gray-200 dark:border-b-0 z-30 flex flex-col top-0 fixed w-full`}>
             <nav className='py-4 hidden xl:flex items-center justify-between max-w-screen-xl container mx-auto px-4'>
                 <Link href={'/'} className='hover:text-violet-700 text-violet-500 transition-colors duration-300'>
-                    <img src='./logo.png' className='h-16 object-fill' />
+                    <Logo />
                 </Link>
                 <div className='' >
                     <ul className='flex items-center gap-8'>
-                        {navItems.map((item, index) => (
+                        {navItems.map((item: NavItem, index) => (
                             <li key={index} className='group cursor-pointer leading-tight tracking-wide text-nav font-semibold hover:text-primary transition-all duration-300'>
                                 {
                                     item?.label === "Services" ?
@@ -61,11 +65,11 @@ export default function Header() {
                                                 <IoChevronDownOutline className='text-md group-hover:rotate-180 transition-all duration-300' />
                                             </div>
                                             <div>
-                                                {isOpen && <ServiceMenu />}
+                                                {isOpen && <ServiceMenu subItems={item?.subItems} />}
                                             </div>
                                         </div>
                                         :
-                                        <Link href={item?.href} className={`text-sm ${item?.href === router?.pathname ? "text-primary": ""}`}>
+                                        <Link href={item?.href} className={`text-sm ${item?.href === router?.pathname ? "text-primary" : ""}`}>
                                             {item?.label}
                                         </Link>
                                 }
@@ -76,7 +80,7 @@ export default function Header() {
 
             </nav>
             <nav className='p-4 flex xl:hidden items-center justify-between'>
-                <img src='./logo.png' className='h-10 object-fill' />
+                <Logo />
                 <CgMenuRight size={25} onClick={() => setNavCollapse(false)} className='cursor-pointer' />
             </nav>
 
@@ -99,9 +103,14 @@ export default function Header() {
                                 </div>
                                 <div>
                                     {menuOpen && <div className="px-3 transition-transform duration-200">
-                                        <a href="javascript:void(0)" className="text-gray-700 flex gap-2 w-full px-4 py-3 leading-5 hover:text-primary transition-all duration-200" role="menuitem" ><HiOutlinePaintBrush className='text-xl' /><span className='text-sm'>UI/UX Design</span></a>
-                                        <a href="javascript:void(0)" className="text-gray-700 flex gap-2 w-full px-4 py-3 leading-5 hover:text-primary transition-all duration-200" role="menuitem" ><FaLaptopCode className='text-xl' /><span className='text-sm'>Web Development</span></a>
-                                        <a href="javascript:void(0)" className="text-gray-700 flex gap-2 w-full px-4 py-3 leading-5 hover:text-primary transition-all duration-200" role="menuitem" ><AiOutlineAndroid className='text-xl' /><span className='text-sm'>App Development</span></a>
+                                        {
+                                            item?.subItems?.map((service: ServiceItems) => {
+                                                const Icon = service.icon;
+                                                return (
+                                                    <Link href={service?.href} className="text-gray-700 flex gap-2 w-full px-4 py-3 leading-5 hover:text-primary transition-all duration-200" role="menuitem" ><span className='text-xl'><Icon /></span> <span className='text-sm'>{service?.label}</span></Link>
+                                                )
+                                            })
+                                        }
                                     </div>}
                                 </div>
                             </>

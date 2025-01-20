@@ -1,67 +1,16 @@
-export interface skill {
-  name: string;
-  image: string;
-  category: string;
+import { IconType } from "react-icons/lib";
+
+// navbar
+export interface NavItem {
+  label: string;
+  href: string;
+  subItems?: SubItem[];
 }
 
-export interface project {
-  name: string;
-  image: string;
-  techstack: string;
-  category: string;
-  links: {
-    visit: string;
-    code: string;
-    video: string;
-  };
-}
-
-export interface experience {
-  company: string;
-  position: string;
-  startDate: string;
-  endDate: string;
-  desc: string[];
-}
-
-export interface education {
-  institute: string;
-  degree: string;
-  startDate: string;
-  endDate: string;
-}
-
-export interface main {
-  name: string;
-  titles: string[];
-  heroImage: string;
-  shortDesc: string;
-  techStackImages: string[];
-}
-
-export interface about {
-  aboutImage: string;
-  aboutImageCaption: string;
-  title: string;
-  about: string;
-  resumeUrl: string;
-  callUrl: string;
-}
-
-export interface social {
-  name: string;
-  icon: string;
-  link: string;
-}
-
-export interface data {
-  main: main;
-  about: about;
-  skills: skill[];
-  projects: project[];
-  experiences: experience[];
-  educations: education[];
-  socials: social[];
+export interface SubItem {
+  icon: IconType;
+  label: string;
+  href: string;
 }
 
 export interface InputProps {
@@ -85,6 +34,7 @@ export interface NumberInputProps {
 export interface ButtonProps {
   className?: string;
   text?: string;
+  type?: "button" | "reset" | "submit" | undefined;
   onClick?: () => void;
 }
 
@@ -93,6 +43,15 @@ export interface ServiceCardProps {
   image: string;
   title: string;
   text: string;
+}
+
+export interface ServiceItems {
+  icon: IconType;
+  label: string;
+  href: string;
+}
+export interface ServiceMenuProps {
+  subItems?: SubItem[];
 }
 
 // portfolio
