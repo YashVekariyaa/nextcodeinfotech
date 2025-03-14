@@ -5,7 +5,8 @@ const nextConfig = {
     },
     images: {
         domains: ['res.cloudinary.com', 'firebasestorage.googleapis.com', 'img.icons8.com', 'raw.githubusercontent.com', 'i.imgur.com', 'img.freepik.com', 'media.geeksforgeeks.org']
-    }
+    },
+    output: 'standalone'
 };
 
 export default nextConfig;
