@@ -1,5 +1,13 @@
 import { IconType } from "react-icons/lib";
 
+export interface Metadata {
+  [key: string]: {
+    title: string;
+    description: string;
+    keywords: string[];
+  };
+}
+
 // navbar
 export interface NavItem {
   label: string;

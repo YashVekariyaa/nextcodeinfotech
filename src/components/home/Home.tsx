@@ -1,10 +1,9 @@
-// 'use client';
 import Hero from "@/components/hero/Hero";
 import Technologies from "@/components/technologies/Technologies";
 import Services from "@/components/services/Services";
 import Portfolio from "@/components/portfolio/Portfolio";
 
-const Home = ({ data }: any) => {
+const Home = () => {
     return (
         <>
             <Hero />

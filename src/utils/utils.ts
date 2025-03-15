@@ -1,4 +1,5 @@
 import { NavItem } from "@/interfaces/main";
+import { Metadata } from "next";
 import { AiOutlineAndroid } from "react-icons/ai";
 import { FaLaptopCode } from "react-icons/fa";
 import { HiOutlinePaintBrush } from "react-icons/hi2";
@@ -343,3 +344,116 @@ export const pages = [
     ],
   },
 ];
+
+export const metadata: Record<string, Metadata> = {
+  home: {
+    title: `${COMPANY_NAME} | Software Development Company`,
+    description: `${COMPANY_NAME} provides cutting-edge software solutions, web development, and IT consulting to drive business success.`,
+    keywords: ["Next.js", "React", "Software Development", "Web Solutions"],
+  },
+  "about-us": {
+    title: `About - ${COMPANY_NAME} | Software Development Company`,
+    description: `Learn more about ${COMPANY_NAME}, our mission, values, and expertise in delivering innovative digital solutions.`,
+    keywords: ["Next.js", "React", "Company Profile", "Tech Industry"],
+  },
+  services: {
+    title: `Services - ${COMPANY_NAME} | Software Development Company`,
+    description: `Explore our professional services, including web development, mobile apps, UI/UX design, DevOps, and cloud solutions.`,
+    keywords: [
+      "Software Development",
+      "Web Apps",
+      "Mobile Development",
+      "Cloud Computing",
+    ],
+  },
+  industries: {
+    title: `Industries - ${COMPANY_NAME} | Software Development Company`,
+    description: `We serve various industries such as healthcare, finance, education, and e-commerce with tailored digital solutions.`,
+    keywords: ["Industries", "Healthcare", "Fintech", "E-commerce"],
+  },
+  careers: {
+    title: `Career - ${COMPANY_NAME} | Join Our Team`,
+    description: `Join ${COMPANY_NAME} and build a rewarding career in software development, engineering, and technology innovation.`,
+    keywords: ["Tech Careers", "Software Jobs", "Join Us", "Engineering Roles"],
+  },
+  contact: {
+    title: `Contact - ${COMPANY_NAME} | Get in Touch`,
+    description: `Have questions? Contact ${COMPANY_NAME} for business inquiries, partnerships, and support services.`,
+    keywords: ["Contact Us", "Support", "Business Inquiry", "Tech Solutions"],
+  },
+  "technology/reactjs": {
+    title: `React.js Development Services | ${COMPANY_NAME}`,
+    description: `Build modern and scalable web applications with our expert React.js development services.`,
+    keywords: ["React.js", "Frontend Development", "Web Apps", "JavaScript"],
+  },
+  "technology/angular": {
+    title: `Angular Development Services | ${COMPANY_NAME}`,
+    description: `Leverage Angular for dynamic, high-performance web applications tailored to your business needs.`,
+    keywords: [
+      "Angular",
+      "Frontend Framework",
+      "Enterprise Apps",
+      "JavaScript",
+    ],
+  },
+  "technology/nodejs": {
+    title: `Node.js Development Services | ${COMPANY_NAME}`,
+    description: `Develop fast and scalable backend applications with our Node.js development expertise.`,
+    keywords: ["Node.js", "Backend Development", "API", "JavaScript"],
+  },
+  "technology/typescript": {
+    title: `TypeScript Development Services | ${COMPANY_NAME}`,
+    description: `Enhance code quality and maintainability with our TypeScript development services.`,
+    keywords: ["TypeScript", "Strong Typing", "JavaScript", "Web Development"],
+  },
+  "technology/mongodb": {
+    title: `MongoDB Development Services | ${COMPANY_NAME}`,
+    description: `Harness the power of NoSQL with MongoDB for scalable and efficient database solutions.`,
+    keywords: ["MongoDB", "NoSQL Database", "Big Data", "Cloud Databases"],
+  },
+  "technology/aws": {
+    title: `AWS Cloud Solutions | ${COMPANY_NAME}`,
+    description: `Optimize your infrastructure with AWS cloud computing services, ensuring scalability and security.`,
+    keywords: ["AWS", "Cloud Computing", "DevOps", "Infrastructure"],
+  },
+  "services/digital-product-design": {
+    title: `Digital Product Design | ${COMPANY_NAME}`,
+    description: `Create intuitive and engaging digital experiences with our UI/UX design and product development expertise.`,
+    keywords: ["Digital Design", "UI/UX", "User Experience", "Prototyping"],
+  },
+  "services/software-architecture": {
+    title: `Software Architecture | ${COMPANY_NAME}`,
+    description: `Design robust and scalable software architectures that drive high-performance applications.`,
+    keywords: ["Software Architecture", "Scalability", "Tech Infrastructure"],
+  },
+  "services/engineering": {
+    title: `Engineering & DevOps | ${COMPANY_NAME}`,
+    description: `Accelerate your development workflow with our DevOps engineering and automation solutions.`,
+    keywords: ["DevOps", "Engineering", "Cloud Solutions", "CI/CD"],
+  },
+  "services/mobile-app-development": {
+    title: `Mobile App Development | ${COMPANY_NAME}`,
+    description: `Build high-quality iOS and Android mobile apps with our expert development services.`,
+    keywords: ["Mobile Apps", "iOS Development", "Android Development"],
+  },
+  "industries/healthcare": {
+    title: `Healthcare Software Solutions | ${COMPANY_NAME}`,
+    description: `Transform patient care with our healthcare software solutions, including EHR and telemedicine platforms.`,
+    keywords: [
+      "Healthcare Tech",
+      "EHR Systems",
+      "Telemedicine",
+      "Medical Apps",
+    ],
+  },
+  "industries/e-commerce": {
+    title: `E-Commerce Solutions | ${COMPANY_NAME}`,
+    description: `Drive online sales with our custom e-commerce development services for modern businesses.`,
+    keywords: ["E-Commerce", "Online Stores", "Shopify", "Magento"],
+  },
+  "industries/digital-banking": {
+    title: `Digital Banking Solutions | ${COMPANY_NAME}`,
+    description: `Empower financial institutions with secure and efficient digital banking platforms.`,
+    keywords: ["Fintech", "Digital Banking", "Payment Solutions"],
+  },
+};
