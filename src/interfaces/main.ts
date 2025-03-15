@@ -81,3 +81,9 @@ export interface Errors {
   phone?: string;
   message?: string;
 }
+
+export interface Skill {
+  name: string;
+  image: string;
+  category: string;
+}

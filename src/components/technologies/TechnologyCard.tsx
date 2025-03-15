@@ -1,10 +1,10 @@
 import Image from "next/image"
 import { useEffect, useState } from 'react'
 import { FastAverageColor } from 'fast-average-color';
-import { skill } from "@/interfaces/main";
+import { Skill } from "@/interfaces/main";
 import { useTheme } from "next-themes";
 
-const TechnologyCard = ({ name, image }: skill) => {
+const TechnologyCard = ({ name, image }: Skill) => {
     const [bgColor, setBgColor] = useState("")
     useEffect(() => {
         new FastAverageColor().getColorAsync(image)
