@@ -44,9 +44,14 @@ export default function Header() {
         };
     }, []);
 
+    const handleMenuClick = (page: string) => {
+        router.push(page)
+        setNavCollapse(true)
+    }
+
     return (
         <header className={` ${scroll ? 'border-b bg-white' : 'border-b-0'} shadow-sm bg-white border-gray-200 dark:border-b-0 z-30 flex flex-col top-0 fixed w-full`}>
-            <nav className='py-4 hidden xl:flex items-center justify-between max-w-screen-xl container mx-auto px-4'>
+            <nav className='py-2 hidden xl:flex items-center justify-between max-w-screen-xl container mx-auto px-4'>
                 <Link href={'/'} className='hover:text-violet-700 text-violet-500 transition-colors duration-300'>
                     <Logo />
                 </Link>
@@ -79,14 +84,14 @@ export default function Header() {
                 </div>
 
             </nav>
-            <nav className='p-4 flex xl:hidden items-center justify-between'>
+            <nav className='px-4 py-2 flex xl:hidden items-center justify-between'>
                 <Logo />
                 <CgMenuRight size={25} onClick={() => setNavCollapse(false)} className='cursor-pointer' />
             </nav>
 
-            <div className={`flex min-h-screen w-screen absolute top-0 ${!navCollapse ? 'right-0' : 'right-[-100%]'} bottom-0 z-50 ease-in duration-300`}>
+            <div className={`flex shadow-md border-2 border-gray-50 min-h-screen w-screen absolute top-0 ${!navCollapse ? 'right-0' : 'right-[-100%]'} bottom-0 z-50 ease-in duration-300`}>
                 <div className="w-1/4" onClick={() => setNavCollapse(true)}></div>
-                <div className="bg-white w-3/4">
+                <div className="bg-white w-3/4 border-2 border-gray-50">
                     <div className='flex justify-end p-3'>
                         <div className='bg-blue-50 rounded-full h-12 w-12 flex justify-center items-center cursor-pointer hover:bg-blue-100 transition-all duration-300'>
                             <CgClose size={20} className='flex justify-center items-center ' onClick={() => setNavCollapse(true)} />
@@ -115,9 +120,9 @@ export default function Header() {
                                 </div>
                             </>
                             :
-                            <Link href={item?.href} key={index} className='flex px-5 flex-col gap-10 cursor-pointer line-clamp-none leading-10 tracking-wide text-sm text-nav font-bold hover:text-primary transition-all duration-300'>
+                            <span onClick={() => handleMenuClick(item?.href)} key={index} className={`flex px-5 flex-col gap-10 cursor-pointer line-clamp-none leading-10 tracking-wide text-sm  font-bold hover:text-primary transition-all duration-300 ${item?.href === router?.pathname ? "text-primary" : "text-nav"}`}>
                                 {item?.label}
-                            </Link>
+                            </span>
                     ))}
                 </div>
             </div>

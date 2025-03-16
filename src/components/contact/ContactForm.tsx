@@ -4,7 +4,9 @@ import NumberInput from '../inputs/NumberInput'
 import 'react-phone-input-2/lib/style.css'
 import TextArea from '../inputs/TextArea'
 import Button from '../buttons/Button'
+import { useForm, ValidationError } from "@formspree/react";
 import { Errors, FormState } from '@/interfaces/main'
+import { toast } from "react-hot-toast";
 
 const ContactForm = () => {
     const [phone, setPhone] = useState<string>("")
@@ -15,13 +17,12 @@ const ContactForm = () => {
         message: "",
     })
     const [errors, setErrors] = useState<Errors>({});
-
+    const [formState, handleSubmit] = useForm("xrbpbqbn");
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
         setState({ ...state, [name]: value });
         validateField(name, value);
-
     };
 
     const validateField = (name: string, value: string) => {
@@ -64,18 +65,33 @@ const ContactForm = () => {
         setPhone(value)
     }
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        // if (validate()) {
-        // Submit form data
-        console.log("Form submitted:", state);
-        // }
-    };
+    const onSubmit = async (e: React.FormEvent) => {
+        e.preventDefault()
+        const submissionData = {
+            ...state,
+            phone: phone
+        };
+
+        try {
+            await handleSubmit(submissionData);
+            toast.success("Form submitted successfully!");
+            setPhone("")
+            setState({
+                name: "",
+                email: "",
+                phone: "",
+                message: "",
+            })
+        } catch (error) {
+            console.error("Submission Error:", error);
+            toast.error("Something went wrong! Please try again.");
+        }
+    }
 
 
     return (
         <div className="md:w-[450px] lg:w-[550px] xl:w-[550px]">
-            <form onSubmit={handleSubmit} className="shadow-md rounded-2xl border-2 border-gray-100 px-8 pt-6 pb-8 mb-4">
+            <form onSubmit={onSubmit} className="shadow-md rounded-2xl border-2 border-gray-100 px-8 pt-6 pb-8 mb-4">
                 <p className='text-normalDark para pb-4 text-xl leading-[28px] font-bold'>Innovate your business today!</p>
 
                 <div className="mb-6">
@@ -100,8 +116,9 @@ const ContactForm = () => {
 
                 <div className="mb-6">
                     <Button
-                        className='bg-primary uppercase text-sm tracking-normal px-10 py-4 rounded font-bold text-white hover:bg-primary-hover transition-all duration-300'
-                        text="Submit"
+                        disabled={formState.submitting}
+                        className='bg-primary disabled:bg-primary/50 disabled:cursor-not-allowed uppercase text-sm tracking-normal px-10 py-4 rounded font-bold text-white hover:bg-primary-hover transition-all duration-300'
+                        text={formState.submitting ? "Submitting..." : "Submit"}
                         type="submit"
                     />
                 </div>

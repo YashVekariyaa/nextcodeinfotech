@@ -307,6 +307,9 @@ export const links = {
 export const contact = {
   email: "info.nextcodeinfotech@gmail.com",
   phoneNumber: "+91 97379 39226",
+  whatsappNumber: "919081133075",
+  whatsappText:
+    "I'd like to get more information about the services you provide.",
   address:
     "C-45, Sumeru City Mall, near Sudama Chowk, Mota Varachha, Surat - 394101",
   location: "https://maps.app.goo.gl/EASuMqkbhPJStd8r7",

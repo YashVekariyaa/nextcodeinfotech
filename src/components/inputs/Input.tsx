@@ -10,6 +10,7 @@ const Input: React.FC<InputProps> = ({ label, name, value, onChange }) => {
             value={value}
             placeholder={label}
             onChange={onChange}
+            required
         />
     )
 }
