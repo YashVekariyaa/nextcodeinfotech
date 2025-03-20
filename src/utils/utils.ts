@@ -259,25 +259,25 @@ export const portfolio = [
   {
     title: "Vianne",
     image: "/portfolio/vianne.png",
-    url: "https://www.traveldate.org/",
+    url: "https://viannejewels.com/",
     category: "Web Development",
   },
   {
     title: "CanConnect",
     image: "/portfolio/canconnect.png",
-    url: "https://www.traveldate.org/",
+    url: "https://development.canconnect.co/",
     category: "Web Development",
   },
   {
     title: "Ad Opus",
     image: "/portfolio/adopus.png",
-    url: "https://www.traveldate.org/",
+    url: "http://adopusrecruitment.com/",
     category: "Web Development",
   },
   {
-    title: "Ad Opus",
+    title: "Stepmed Pharma",
     image: "/portfolio/stepmed.png",
-    url: "https://www.traveldate.org/",
+    url: "https://stepmedpharma.vercel.app/",
     category: "Web Development",
   },
   // {
