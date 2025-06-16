@@ -128,17 +128,20 @@ export const services = [
   {
     image: "/icons/brush.svg",
     title: "UI / UX Design",
-    text: "Enhance your online experience with professional UI/UX design expertise.",
+    description:
+      "Enhance your online experience with professional UI/UX design expertise.",
   },
   {
     image: "/icons/pcweb.png",
     title: "Web Development",
-    text: "Take your web applications to the next level with professional web development expertise.",
+    description:
+      "Take your web applications to the next level with professional web development expertise.",
   },
   {
     image: "/icons/mobile-code.png",
     title: "Mobile App Development",
-    text: "Boost your brand with our specialized mobile app development solutions.",
+    description:
+      "Boost your brand with our specialized mobile app development solutions.",
   },
 ];
 
@@ -146,47 +149,95 @@ export const uiUxServices = [
   {
     image: "/icons/services/user-research.png",
     title: "User Research",
-    text: "Gain deep insights into your users' needs and behaviors to inform user-centric design solutions.",
+    description:
+      "Gain deep insights into your users' needs and behaviors to inform user-centric design solutions.",
   },
   {
     image: "/icons/services/wireframe.png",
     title: "Wireframing & Prototyping",
-    text: "Visualize and validate your ideas with interactive wireframes and prototypes before final development.",
+    description:
+      "Visualize and validate your ideas with interactive wireframes and prototypes before final development.",
   },
   {
     image: "/icons/services/Visualization.png",
     title: "Visual (UI) Design",
-    text: "Create visually stunning and brand-aligned interfaces that captivate and engage users.",
+    description:
+      "Create visually stunning and brand-aligned interfaces that captivate and engage users.",
   },
   {
     image: "/icons/services/user-experience.png",
     title: "UX Design",
-    text: "Develop user-centric experiences that are intuitive, accessible, and enhance user satisfaction.",
+    description:
+      "Develop user-centric experiences that are intuitive, accessible, and enhance user satisfaction.",
   },
   {
     image: "/icons/services/interaction.png",
     title: "Interaction Design",
-    text: "Design seamless interactions that add life to your digital products and keep users engaged.",
+    description:
+      "Design seamless interactions that add life to your digital products and keep users engaged.",
   },
   {
     image: "/icons/services/usability-testing.png",
     title: "Usability Testing",
-    text: "Identify and fix potential issues with usability testing to ensure your product performs flawlessly.",
+    description:
+      "Identify and fix potential issues with usability testing to ensure your product performs flawlessly.",
   },
   {
     image: "/icons/services/responsive-design.png",
     title: "Responsive Design",
-    text: "Ensure your design works beautifully across all devices, from mobile to desktop.",
+    description:
+      "Ensure your design works beautifully across all devices, from mobile to desktop.",
   },
   {
     image: "/icons/services/user-strategy.png",
     title: "UX Strategy & Consulting",
-    text: "Align business goals with user needs through strategic UI/UX consulting services.",
+    description:
+      "Align business goals with user needs through strategic UI/UX consulting services.",
   },
   {
     image: "/icons/services/support-services.png",
     title: "UI/UX Support & Maintenance",
-    text: "Receive continuous support to keep your product up-to-date and optimized for user satisfaction.",
+    description:
+      "Receive continuous support to keep your product up-to-date and optimized for user satisfaction.",
+  },
+];
+
+export const webDevelopmentServices = [
+  {
+    image: "/icons/services/website.png",
+    title: "Website Development",
+    description:
+      "Design and develop scalable, responsive, and SEO-friendly websites tailored to your business needs.",
+  },
+  {
+    image: "/icons/services/cms.png",
+    title: "CMS Development",
+    description:
+      "Build custom CMS solutions (WordPress, Headless CMS) for easy content management and control.",
+  },
+  {
+    image: "/icons/services/e-com.png ",
+    title: "E-commerce Development",
+    description:
+      "Create robust online stores with smooth payments, product catalogs, and a rich shopping experience.",
+  },
+  {
+    image: "/icons/services/web-app.png",
+    title: "Web Application Development",
+    description:
+      "Develop interactive and scalable web applications with modern technologies and frameworks.",
+  },
+  {
+    image: "/icons/services/web-maintenance.png",
+    title: "Maintenance & Support",
+    description:
+      "We provide ongoing maintenance and technical support to keep your website up-to-date and performing optimally.",
+  },
+  {
+    image: "/icons/services/seo.png",
+    title: "SEO Optimization",
+    description:
+      "Improve visibility and search rankings by optimizing your website’s structure and performance.",
   },
 ];
 
@@ -249,6 +300,63 @@ export const designProcess = [
   },
 ];
 
+export const webDevelopmentProcess = [
+  {
+    step: 1,
+    title: "Requirements & Analysis",
+    description:
+      "We gather your goals, requirements, and target audience details to align the website with your business needs.",
+  },
+  {
+    step: 2,
+    title: "Planning & Wireframing",
+    description:
+      "We create a clear site structure and wireframes to visualize page layouts and functionality.",
+  },
+  {
+    step: 3,
+    title: "Design Conversion",
+    description:
+      "Designs are converted into pixel-perfect, responsive code ready for development.",
+  },
+  {
+    step: 4,
+    title: "Development",
+    description:
+      "We implement scalable code, integrate back-end services, and connect databases to bring your site to life.",
+  },
+  {
+    step: 5,
+    title: "Quality Assurance",
+    description:
+      "We thoroughly test for bugs, performance, and compatibility across all devices and browsers.",
+  },
+  {
+    step: 6,
+    title: "Client Review & Approval",
+    description:
+      "We share a staging link with you to review, provide feedback, and approve the final product.",
+  },
+  {
+    step: 7,
+    title: "Performance Optimization",
+    description:
+      "We fine-tune code and delivery to maximize loading speeds, SEO, and overall performance.",
+  },
+  {
+    step: 8,
+    title: "Launch",
+    description:
+      "Once approved and tested, we deploy your website to a live environment smoothly.",
+  },
+  {
+    step: 9,
+    title: "Maintenance & Support",
+    description:
+      "We provide ongoing maintenance and technical support to keep your website up-to-date and performing optimally.",
+  },
+];
+
 export const portfolio = [
   {
     title: "Traveldate",
@@ -308,7 +416,7 @@ export const contact = {
   email: "info.nextcodeinfotech@gmail.com",
   phoneNumber: "+91 97379 39226",
   whatsappNumber: "919081133075",
-  whatsappText:
+  whatsappdescription:
     "I'd like to get more information about the services you provide.",
   address:
     "C-45, Sumeru City Mall, near Sudama Chowk, Mota Varachha, Surat - 394101",

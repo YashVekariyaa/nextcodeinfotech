@@ -51,7 +51,7 @@ export interface ButtonProps {
 export interface ServiceCardProps {
   image: string;
   title: string;
-  text: string;
+  description: string;
 }
 
 export interface ServiceItems {
