@@ -28,7 +28,7 @@ export const navItems: NavItem[] = [
       {
         icon: AiOutlineAndroid,
         label: "App Development",
-        href: "/app",
+        href: "/app-development",
       },
     ],
   },
@@ -241,6 +241,45 @@ export const webDevelopmentServices = [
   },
 ];
 
+export const appDevelopmentServices = [
+  {
+    image: "/icons/services/native-app.png",
+    title: "Native App Development",
+    description:
+      "We develop high-performance native apps for iOS and Android to provide a rich and smooth user experience.",
+  },
+  {
+    image: "/icons/services/cross-app.png",
+    title: "Cross-Platform App Development",
+    description:
+      "Using technologies like React Native or Flutter, we build cross-platform apps efficiently with a single codebase.",
+  },
+  {
+    image: "/icons/services/user-experience.png",
+    title: "App UI/UX Design",
+    description:
+      "We create intuitive and interactive UI/UX designs tailored for mobile devices and different platforms.",
+  },
+  {
+    image: "/icons/services/app-maintenance.png",
+    title: "Maintenance & Support",
+    description:
+      "We provide ongoing maintenance, bug fixes, and support to keep your app up-to-date and running smoothly.",
+  },
+  {
+    image: "/icons/services/app-performance.png",
+    title: "App Performance Optimization",
+    description:
+      "We fine-tune your application’s performance, speed, and stability for the best user experience.",
+  },
+  {
+    image: "/icons/services/app-deployment.png",
+    title: "App Store Deployment",
+    description:
+      "We handle submission to App Stores, addressing guidelines and approval processes to get your app live.",
+  },
+];
+
 export const designProcess = [
   {
     step: 1,
@@ -357,6 +396,57 @@ export const webDevelopmentProcess = [
   },
 ];
 
+export const appDevelopmentProcess = [
+  {
+    step: 1,
+    title: "Requirements & Analysis",
+    description:
+      "We gather your goals, requirements, and target audience details to align the app with your business needs.",
+  },
+  {
+    step: 2,
+    title: "Wireframing & UI Design",
+    description:
+      "We create wireframes and UI designs to visualize the app’s flow, structure, and user experience.",
+  },
+  {
+    step: 3,
+    title: "Prototyping",
+    description:
+      "We develop a clickable prototype to validate functionality and gather feedback early on.",
+  },
+  {
+    step: 4,
+    title: "Development",
+    description:
+      "We implement scalable code and integrate back-end services and APIs to bring your app to life.",
+  },
+  {
+    step: 5,
+    title: "Quality Assurance",
+    description:
+      "We thoroughly test for bugs, performance issues, and compatibility across devices and platforms.",
+  },
+  {
+    step: 6,
+    title: "Client Review & Approval",
+    description:
+      "We share a build with you for final review, gather feedback, and make necessary tweaks.",
+  },
+  {
+    step: 7,
+    title: "Launch",
+    description:
+      "Once approved and tested, we deploy your app to the App Store and/or Google Play Store.",
+  },
+  {
+    step: 8,
+    title: "Maintenance & Support",
+    description:
+      "We provide ongoing maintenance and technical support to keep your app up-to-date and running smoothly.",
+  },
+];
+
 export const portfolio = [
   {
     title: "Traveldate",
@@ -416,7 +506,7 @@ export const contact = {
   email: "info.nextcodeinfotech@gmail.com",
   phoneNumber: "+91 97379 39226",
   whatsappNumber: "919081133075",
-  whatsappText:
+  whatsappdescription:
     "I'd like to get more information about the services you provide.",
   address:
     "C-45, Sumeru City Mall, near Sudama Chowk, Mota Varachha, Surat - 394101",
